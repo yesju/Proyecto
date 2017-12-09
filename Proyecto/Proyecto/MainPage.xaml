@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Proyecto"
+             x:Class="Proyecto.MainPage">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="Aquamarine">
+            <Label Text="Tecnológico de Estudios Superiores de Huixquilucan" Font="23" TextColor="Brown" VerticalOptions="Center" HorizontalOptions="Center" />
+            <Entry x:Name="Usuario" HorizontalOptions="Fill" VerticalOptions="Center"  Placeholder="Usuario"></Entry>
+            <Entry x:Name="Contraseña" HorizontalOptions="Fill" VerticalOptions="Center" Placeholder="Password"></Entry>
+            <Button x:Name="login" HorizontalOptions="CenterAndExpand" VerticalOptions="Center" Clicked="login_Clicked" Text="login"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

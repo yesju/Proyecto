@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Proyecto.InsertUsuario">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="Aquamarine">
+            <Label Text="ID: " Grid.Column="0" Grid.Row="0" VerticalOptions="Center"/>
+            <Entry x:Name="Entry_id" HorizontalOptions="Fill" VerticalOptions="Center" ></Entry>
+            <Label Text="Usuario: " Grid.Column="0" Grid.Row="1" VerticalOptions="Center"/>
+            <Entry x:Name="Entry_Usuario" HorizontalOptions="Fill" VerticalOptions="Center"  ></Entry>
+            <Label Text="Contraseña: " Grid.Column="0" Grid.Row="2" VerticalOptions="Center"/>
+            <Entry x:Name="Entry_Contraseña" HorizontalOptions="Fill" VerticalOptions="Center" ></Entry>
+            <Label Text="Rol: " Grid.Column="0" Grid.Row="3" VerticalOptions="Center"/>
+            <Picker x:Name="Picker_rol" Grid.Column="0" Grid.Row="3" />
+
+            <Button Text="Insertar nuevo registro" x:Name="Boton_Insertar" Clicked="Boton_Insertar_Clicked" BackgroundColor="Aqua"/>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

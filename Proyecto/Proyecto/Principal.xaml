@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Proyecto.Principal">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="LightBlue">
+
+            <Button Text="Insertar nuevo registro" x:Name="Boton_Insertar" Clicked="Boton_Insertar_Clicked" BackgroundColor="Aqua"/>
+            <Button Text=" Insertar Tareas" x:Name="Boton_Tareas" Clicked="Boton_Tareas_Clicked" BackgroundColor="Aqua"/>
+            <Button Text="Tareas" x:Name="Boton_AsigTareas" Clicked="Boton_AsigTareas_Clicked" BackgroundColor="Aqua"/>
+            <Button Text="Usuario" x:Name="Boton_Usuarios" Clicked="Boton_Usuarios_Clicked" BackgroundColor="Aqua"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

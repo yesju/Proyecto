@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Proyecto.SelectUsuario">
+    <ContentPage.Content>
+        <StackLayout>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="100"></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="30"></RowDefinition>
+                    <RowDefinition Height="30"></RowDefinition>
+                    <RowDefinition Height="30"></RowDefinition>
+                    <RowDefinition Height="40"></RowDefinition>
+                    <RowDefinition Height="40"></RowDefinition>
+                    <RowDefinition Height="30"></RowDefinition>
+                    
+
+                </Grid.RowDefinitions>
+                <Label Text="ID: " Grid.Column="0" Grid.Row="0" VerticalOptions="Center"/>
+                <Entry x:Name="Entry_id" Text="{Binding Id}"  Grid.Column="1" Grid.Row="0" IsEnabled="False"/>
+                
+                <Label Text="Usuario: " Grid.Column="0" Grid.Row="1" VerticalOptions="Center"/>
+                <Entry x:Name="Entry_Usuario" Text="{Binding Usuario}" Grid.Column="1" Grid.Row="1" />
+                
+                <Label Text="Contraseña: " Grid.Column="0" Grid.Row="2" VerticalOptions="Center"/>
+                <Entry x:Name="Entry_Contraseña" Text="{Binding Contraseña}" Grid.Column="1" Grid.Row="2"/>
+                
+                <Label Text="Rol: " Grid.Column="0" Grid.Row="3" VerticalOptions="Center"/>
+                <Picker x:Name="Picker_rol" Grid.Column="1" Grid.Row="3" VerticalOptions="Center" />
+                
+
+                <Button x:Name="Button_Actualizar" Text="Actualizar Registro" Clicked="Button_Actualizar_Clicked" Grid.Column="0" Grid.Row="9" Grid.ColumnSpan="2" BackgroundColor="Aqua"/>
+                <Button x:Name="Button_Eliminar" Text="Eliminar Registro" Clicked="Button_Eliminar_Clicked" Grid.Column="0" Grid.Row="10" Grid.ColumnSpan="2" BackgroundColor="Aqua"/>
+
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+
+</ContentPage>

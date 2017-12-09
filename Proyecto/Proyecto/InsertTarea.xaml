@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Proyecto.InsertTarea">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="Aquamarine">
+            <Entry x:Name="Entry_idtareas" HorizontalOptions="Fill" VerticalOptions="Center"  Placeholder="id Tareas"></Entry>
+            <Entry x:Name="Entry_nombretareas" HorizontalOptions="Fill" VerticalOptions="Center"  Placeholder="Nombre Tarea"></Entry>
+            <Entry x:Name="Entry_descripcion" HorizontalOptions="Fill" VerticalOptions="Center" Placeholder="Descripcion"></Entry>
+            <Entry x:Name="Entry_persona" HorizontalOptions="Fill" VerticalOptions="Center" Placeholder="Responsable"></Entry>
+           
+            <Label Text="Prioridad: " Grid.Column="0" Grid.Row="0" VerticalOptions="Center"/>
+            <Picker x:Name="Picker_prioridad" Grid.Column="1" Grid.Row="4"/>
+            <DatePicker x:Name="Picker_fechaentrega" HorizontalOptions="Fill" VerticalOptions="Center"  MaximumDate="2100-01-01" MinimumDate="2000-01-01"></DatePicker>
+            <Label Text="Dependencia: " Grid.Column="0" Grid.Row="0" VerticalOptions="Center"/>
+            <Picker x:Name="Picker_dependencia" Grid.Column="1" Grid.Row="6"/>
+            <Label Text="Status: " Grid.Column="0" Grid.Row="0" VerticalOptions="Center"/>
+            <Picker x:Name="Picker_Status" HorizontalOptions="Fill" VerticalOptions="Center"/>
+            <Button Text="Insertar" x:Name="Boton_Insertar" Clicked="Boton_Insertar_Clicked"  HorizontalOptions="CenterAndExpand" BackgroundColor="Aqua"/>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
